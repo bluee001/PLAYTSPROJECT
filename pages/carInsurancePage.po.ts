@@ -1,4 +1,4 @@
-import { Page } from "@playwright/test";
+import { Locator, Page } from "@playwright/test";
 
 export class CarInsurancePage {
 
@@ -6,8 +6,9 @@ export class CarInsurancePage {
 
     constructor(page: Page) {
         this.page = page;
-    }
 
+    }
+    
     async hoverTemplateDropdown() {
         await this.page.getByRole('menuitem', { name: 'Templates', exact: true }).hover();
     }
