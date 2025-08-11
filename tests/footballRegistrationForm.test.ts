@@ -13,7 +13,7 @@ test('Validate and enter the required details in car insurance form', async ({ p
     
     const footballRegForm = new FootballRegistrationForm(page);
     await footballRegForm.footballRegForm.click();
-    await page.pause();
+    
 
 
     
